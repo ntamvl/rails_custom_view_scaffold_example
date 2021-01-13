@@ -3,6 +3,8 @@ Customize view scaffolding template using Bootstrap 5
 
 We will do in this example:
 - Create new new the Ruby on Rails project using version 6.1.1
+- Locate Railties path
+- Customize the scaffold template
 - Add Boostrap version 5.0.0-beta1
 - Generate scaffold for category and article 
 - Run project and see the result
