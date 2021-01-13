@@ -58,12 +58,12 @@ We found railties path is:
 Then we get the scaffolding templates path:
 
 ```bash
-/Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates
+/Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/generators/erb/scaffold/templates
 ```
 
 **List folder in the existing scaffold template:**
 ```bash
-ls -l /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates
+ls -l /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/generators/erb/scaffold/templates
 total 40
 drwxr-xr-x  7 tamnguyen  staff   224 Jan  8 10:01 .
 drwxr-xr-x  4 tamnguyen  staff   128 Jan  8 10:01 ..
@@ -88,7 +88,7 @@ lib/templates/erb/scaffold/show.html.erb.tt
 **Following these commands to get this:**
 ```
 mkdir -p lib/templates/erb/scaffold
-cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates/*.* lib/templates/erb/scaffold
+cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/generators/erb/scaffold/templates/*.* lib/templates/erb/scaffold
 ```
 
 *Then we open files `*.erb.tt` to customize base bootstrap*
