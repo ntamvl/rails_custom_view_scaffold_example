@@ -278,6 +278,19 @@ http://localhost:3000/categories
 http://localhost:3000/articles
 ```
 
+## If you want to run this example quickly
+
+```
+cd 
+git clone https://github.com/ntamvl/rails_custom_view_scaffold_example 
+cd rails_custom_view_scaffold_example
+bundle install && yarn install 
+rails db:create db:migrate 
+rails s
+```
+
+Enjoy :D :) <3
+
 ---
 Cheers, and happy coding!
 
