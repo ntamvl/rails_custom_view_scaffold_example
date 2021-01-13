@@ -186,7 +186,7 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
 ```
 
-** File new.html.erb.tt**
+**File new.html.erb.tt**
 ```erb
 <div class="container-fluid">
   <h1>New <%= singular_table_name.titleize %></h1>
@@ -280,4 +280,7 @@ http://localhost:3000/articles
 
 ---
 Cheers, and happy coding!
+
+I also published this example at my blog [https://ntam.me/customize-view-scaffolding-template-using-bootstrap-5/](https://ntam.me/customize-view-scaffolding-template-using-bootstrap-5/)
+
 If you have questions or comments about this blog post, you can get in touch with me on Twitter [@nguyentamvn](https://twitter.com/nguyentamvn)
