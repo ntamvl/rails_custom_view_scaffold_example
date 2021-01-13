@@ -50,7 +50,10 @@ bundle info railties
   Path: /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1
 ```
 
-We found railties path is `/Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1`
+We found railties path is: 
+```
+/Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1
+```
 
 Then we get the scaffolding templates path:
 
