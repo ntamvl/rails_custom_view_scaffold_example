@@ -76,7 +76,7 @@ drwxr-xr-x  4 tamnguyen  staff   128 Jan  8 10:01 ..
 
 ## Copy and customize the scaffold template
 We should copy the existing scaffold template to path `lib/templates/erb/scaffold` in the project folder
-should we have the lib folder in the project:
+We should have the lib folder in the project:
 ```
 lib/templates/erb/scaffold/_form.html.erb.tt
 lib/templates/erb/scaffold/edit.html.erb.tt
