@@ -11,3 +11,7 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// Add these lines
+import "bootstrap"
+import "bootstrap/scss/bootstrap.scss"

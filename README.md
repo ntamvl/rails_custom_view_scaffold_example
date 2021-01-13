@@ -244,7 +244,7 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
 Run this command to add bootstrap
 ```
-yarn add bootstrap@5.0.0-beta1 @popperjs/core
+yarn add bootstrap@5.0.0-beta1 @popperjs/core@@2.6.0
 ```
 
 Edit `app/javascript/packs/application.js`:
