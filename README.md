@@ -91,7 +91,7 @@ mkdir -p lib/templates/erb/scaffold
 cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/generators/erb/scaffold/templates/*.* lib/templates/erb/scaffold
 ```
 
-*Then we open files `*.erb.tt` to customize base bootstrap*
+*Then we open files `*.erb.tt` to customize base on Bootstrap 5*
 
 **File _form.html.erb.tt**
 ```erb
