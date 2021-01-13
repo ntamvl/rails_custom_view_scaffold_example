@@ -7,6 +7,8 @@ We will do in this example:
 - Generate scaffold for category and article 
 - Run project and see the result
 
+![Rails Custom View Scaffold Example](https://raw.githubusercontent.com/ntamvl/rails_custom_view_scaffold_example/master/screenshot.png)
+
 ## Create new project
 ```
 cd
