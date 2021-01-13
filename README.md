@@ -1,5 +1,6 @@
 # Rails Custom View Scaffold Example
 Customize view scaffolding template using Bootstrap 5
+
 We will do in this example:
 - Create new new the Ruby on Rails project using version 6.1.1
 - Add Boostrap version 5.0.0-beta1
@@ -15,11 +16,13 @@ rails _6.1.1_ new rails_custom_view_scaffold_example
 ## Locate the existing template
 
 The existing scaffolding templates are under the railties directory, located in:
+
 ```bash
 [railties directory path]/lib/rails/generators/erb/scaffold/templates
 ```
 
 Run this command to show where railties is located
+
 ```bash
 bundle info railties
 
@@ -28,7 +31,8 @@ OR
 bundle show railties
 ```
 
-Example in my pc:
+**Example in my pc:**
+
 ```bash
 bundle info railties
   * railties (6.1.1)
@@ -43,14 +47,16 @@ bundle info railties
 ```
 
 We found railties path is `/Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1`
+
 Then we get the scaffolding templates path:
+
 ```bash
 /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates
 ```
 
-List folder in the existing scaffold template:
+**List folder in the existing scaffold template:**
 ```bash
-ll /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates
+ls -l /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates
 total 40
 drwxr-xr-x  7 tamnguyen  staff   224 Jan  8 10:01 .
 drwxr-xr-x  4 tamnguyen  staff   128 Jan  8 10:01 ..
@@ -72,13 +78,13 @@ lib/templates/erb/scaffold/new.html.erb.tt
 lib/templates/erb/scaffold/show.html.erb.tt
 ```
 
-Following these commands to get this:
+**Following these commands to get this:**
 ```
 mkdir -p lib/templates/erb/scaffold
 cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1//lib/rails/generators/erb/scaffold/templates/*.* lib/templates/erb/scaffold
 ```
 
-Then we open files `*.erb.tt` to customize base bootstrap
+*Then we open files `*.erb.tt` to customize base bootstrap*
 
 **File _form.html.erb.tt**
 ```erb
@@ -252,13 +258,15 @@ import "bootstrap/scss/bootstrap.scss"
 
 ## Generate scaffold for Category and Article
 Generate new views for the restaurant model overriding the original ones.
+
 ```
 rails g scaffold Category name description:text
 rails g scaffold Article title content:text category:references active:boolean
 
 ```
 
-Then run migration command
+**Then run migration command**
+
 ```
 bundle exec rails db:create db:migrate
 bundle exec rails s
