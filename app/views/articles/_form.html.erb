@@ -2,7 +2,6 @@
   <% if article.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
-
       <ul>
         <% article.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,27 +9,22 @@
       </ul>
     </div>
   <% end %>
-
   <div class="form-group mb-3">
     <%= form.label :title, class: "form-label" %>
     <%= form.text_field :title, class:"form-control" %>
   </div>
-
   <div class="form-group mb-3">
     <%= form.label :content, class: "form-label" %>
     <%= form.text_area :content, class:"form-control" %>
   </div>
-
   <div class="form-group mb-3">
     <%= form.label :category_id %>
-    <%= form.collection_select :category_id, Category.all, :id, :name, { prompt: true }, { class: "form-control" }  %>
+    <%= form.collection_select :category_id, Category.all, :id, :name, { prompt: true }, { class: "form-select" }  %>
   </div>
-
   <div class="form-group mb-3">
     <%= form.label :active, class: "form-check-label" %>
     <%= form.check_box :active, class:"form-check-input" %>
   </div>
-
   <div class="form-group mb-3">
     <%= form.submit class: 'btn btn-primary' %>
   </div>
