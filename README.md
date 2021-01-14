@@ -302,6 +302,11 @@ rails db:create db:migrate
 rails s
 ```
 
+open other terminal and run:
+```
+./bin/webpack-dev-server
+```
+
 Enjoy :D :) <3
 
 ---
