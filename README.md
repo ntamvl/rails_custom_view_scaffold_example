@@ -126,7 +126,7 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
     <%%= form.<%= attribute.field_type %> :<%= attribute.column_name %>, class:"form-check-input" %>
 <% elsif attribute.reference? -%>
     <%%= form.label :<%= attribute.column_name %> %>
-    <%%= form.collection_select :<%= attribute.column_name %>, <%= attribute.name.camelize %>.all, :id, :name, { prompt: true }, { class: "form-control" }  %>
+    <%%= form.collection_select :<%= attribute.column_name %>, <%= attribute.name.camelize %>.all, :id, :name, { prompt: true }, { class: "form-select" }  %>
 <% else -%>
     <%%= form.label :<%= attribute.column_name %>, class: "form-label" %>
     <%%= form.<%= attribute.field_type %> :<%= attribute.column_name %>, class:"form-control" %>
