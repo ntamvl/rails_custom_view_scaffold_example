@@ -279,6 +279,12 @@ bundle exec rails db:create db:migrate
 bundle exec rails s
 ```
 
+open other terminal and run:
+
+```
+./bin/webpack-dev-server
+```
+
 and see the result at the address
 ```
 http://localhost:3000/categories
