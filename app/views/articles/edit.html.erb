@@ -1,8 +1,6 @@
 <div class="container-fluid">
   <h1>Editing Article</h1>
-
   <%= render 'form', article: @article %>
-
-  <%= link_to 'Show', @article, class: "btn btn-light min-width-btn" %> |
-  <%= link_to 'Back', articles_path, class: "btn btn-light min-width-btn" %>
+  <%= link_to 'Show', @article, class: "btn btn-primary" %> |
+  <%= link_to 'Back', articles_path, class: "btn btn-secondary" %>
 </div>

@@ -148,8 +148,8 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
   <%%= render 'form', <%= singular_table_name %>: @<%= singular_table_name %> %>
 
-  <%%= link_to 'Show', @<%= singular_table_name %>, class: "btn btn-light min-width-btn" %> |
-  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-light min-width-btn" %>
+  <%%= link_to 'Show', @<%= singular_table_name %>, class: "btn btn-primary" %> |
+  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-secondary" %>
 </div>
 
 ```
@@ -187,7 +187,7 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
   <br>
 
-  <%%= link_to 'New <%= singular_table_name.titleize %>', new_<%= singular_route_name %>_path, class: "btn btn-success min-width-btn" %>
+  <%%= link_to 'New <%= singular_table_name.titleize %>', new_<%= singular_route_name %>_path, class: "btn btn-primary" %>
 
 </div>
 
@@ -200,7 +200,7 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
   <%%= render 'form', <%= singular_table_name %>: @<%= singular_table_name %> %>
 
-  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-light min-width-btn" %>
+  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-primary" %>
 </div>
 
 ```
@@ -234,8 +234,8 @@ cp /Users/tamnguyen/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.
 
   <% end -%>
 
-  <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: "btn btn-primary min-width-btn" %>
-  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-light min-width-btn" %>
+  <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: "btn btn-primary" %>
+  <%%= link_to 'Back', <%= index_helper %>_path, class: "btn btn-secondary" %>
 </div>
 
 ```

@@ -1,35 +1,29 @@
 <div class="container-fluid">
   <p id="notice"><%= notice %></p>
-
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Title:</strong></p>
     <div>
       <%= @article.title %>
     </div>
   </div>
-  
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Content:</strong></p>
     <div>
       <%= @article.content %>
     </div>
   </div>
-  
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Category:</strong></p>
     <div>
       <%= @article.category_id %>
     </div>
   </div>
-  
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Active:</strong></p>
     <div>
       <%= @article.active %>
     </div>
   </div>
-  
-  
-  <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-primary min-width-btn" %>
-  <%= link_to 'Back', articles_path, class: "btn btn-light min-width-btn" %>
+  <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-primary" %>
+  <%= link_to 'Back', articles_path, class: "btn btn-secondary" %>
 </div>

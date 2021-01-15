@@ -1,21 +1,17 @@
 <div class="container-fluid">
   <p id="notice"><%= notice %></p>
-
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Name:</strong></p>
     <div>
       <%= @category.name %>
     </div>
   </div>
-  
-      <div class="form-group mb-3">
+  <div class="form-group mb-3">
     <p><strong>Description:</strong></p>
     <div>
       <%= @category.description %>
     </div>
   </div>
-  
-  
-  <%= link_to 'Edit', edit_category_path(@category), class: "btn btn-primary min-width-btn" %>
-  <%= link_to 'Back', categories_path, class: "btn btn-light min-width-btn" %>
+  <%= link_to 'Edit', edit_category_path(@category), class: "btn btn-primary" %>
+  <%= link_to 'Back', categories_path, class: "btn btn-secondary" %>
 </div>
